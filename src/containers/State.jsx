@@ -36,9 +36,9 @@ export default function State({ name, accentColor, tasks, id }) {
             {...provided.droppableProps}
             // isDraggingOver={snapshot.isDraggingOver}
           >
-            {provided.placeholder}
             {tasks &&
               tasks.map((task, i) => <TaskCard key={i} index={i} {...task} />)}
+            {provided.placeholder}
           </div>
         )}
       </Droppable>

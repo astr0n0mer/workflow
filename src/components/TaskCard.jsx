@@ -48,7 +48,6 @@ export default function TaskCard({
           {...provided.draggableProps}
           {...provided.dragHandleProps}
           ref={provided.innerRef}
-          isdragging={snapshot.isDragging.toString()}
         >
           <div className="flex items-center justify-between">
             <div
