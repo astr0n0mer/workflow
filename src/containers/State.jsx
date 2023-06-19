@@ -1,7 +1,8 @@
 import TaskCard from "../components/TaskCard";
 import AddSquare from "../assets/add-square.svg";
+import { Droppable } from "react-beautiful-dnd";
 
-export default function State({ name, accentColor, tasks, setTasks }) {
+export default function State({ name, accentColor, tasks, id }) {
   return (
     <section className="flex flex-col gap-4 rounded-2xl bg-stateBackground p-4">
       <header
@@ -27,7 +28,20 @@ export default function State({ name, accentColor, tasks, setTasks }) {
         </button>
       </header>
 
-      {tasks && tasks.map((task) => <TaskCard key={task.title} {...task} />)}
+      <Droppable droppableId={id}>
+        {(provided, snapshot) => (
+          <div
+            className="flex flex-col gap-4"
+            ref={provided.innerRef}
+            {...provided.droppableProps}
+            // isDraggingOver={snapshot.isDraggingOver}
+          >
+            {provided.placeholder}
+            {tasks &&
+              tasks.map((task, i) => <TaskCard key={i} index={i} {...task} />)}
+          </div>
+        )}
+      </Droppable>
     </section>
   );
 }

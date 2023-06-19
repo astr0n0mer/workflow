@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import { projects } from "../utils/data";
+import { boards } from "../utils/data";
 
 import Add from "../assets/add.svg";
 import Bulb from "../assets/bulb-yellow.svg";
@@ -20,7 +20,7 @@ export default function Projects() {
       </div>
 
       <div className="flex flex-col gap-2 py-6 font-medium text-secondary">
-        {projects?.map((project, i) => (
+        {boards?.map((project, i) => (
           <Link
             key={project.name}
             to="/"
