@@ -51,7 +51,7 @@ export default function TaskCard({
         >
           <div className="flex items-center justify-between">
             <div
-              className={`inline-block rounded-md px-2 py-1 text-sm capitalize ${priorityColors[priority]}`}
+              className={`inline-block rounded-md px-2 py-1 text-xs font-semibold capitalize ${priorityColors[priority]}`}
             >
               {priority}
             </div>
