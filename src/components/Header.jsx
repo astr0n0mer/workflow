@@ -1,16 +1,18 @@
-import InviteUser from "../assets/add-square.svg";
-import CalendarDate from "../assets/calendar-date.svg";
-import DownArrow from "../assets/down-arrow.svg";
-import Filter from "../assets/filter.svg";
-import GridView from "../assets/grid-view.svg";
-import Link from "../assets/link.svg";
-import ListView from "../assets/list-view.svg";
-import Edit from "../assets/pencil.svg";
-import Share from "../assets/share.svg";
-import User1 from "../assets/users/user-1.png";
-import User2 from "../assets/users/user-2.png";
-import User3 from "../assets/users/user-3.png";
-import User4 from "../assets/users/user-4.png";
+import {
+  AddSquare,
+  CalendarDate,
+  DownArrow,
+  Edit,
+  Filter,
+  GridView,
+  Link,
+  ListView,
+  Share,
+  User1,
+  User2,
+  User3,
+  User4,
+} from "../assets";
 
 const users = [User1, User2, User3, User4];
 
@@ -30,7 +32,7 @@ export default function Header() {
 
         <div className="flex gap-4">
           <button className="flex items-center gap-2 font-medium text-actionItem">
-            <img src={InviteUser} alt="Invite user" />
+            <img src={AddSquare} alt="Invite user" />
             <span>Invite</span>
           </button>
 

@@ -1,16 +1,18 @@
-import Ellipses from "../assets/ellipses.svg";
-import Files from "../assets/files.svg";
-import Message from "../assets/navigation-messages.svg";
-import Dog from "../assets/task-assets/dog.png";
-import Flower from "../assets/task-assets/flower.png";
-import MobileAppDesign from "../assets/task-assets/mobile-app-design.png";
-import Plant from "../assets/task-assets/plant.png";
-import User1 from "../assets/users/user-1.png";
-import User2 from "../assets/users/user-2.png";
-import User3 from "../assets/users/user-3.png";
-import User4 from "../assets/users/user-4.png";
-import User5 from "../assets/users/user-5.png";
 import { Draggable } from "react-beautiful-dnd";
+import {
+  Dog,
+  Ellipses,
+  Files,
+  Flower,
+  Message,
+  MobileAppDesign,
+  Plant,
+  User1,
+  User2,
+  User3,
+  User4,
+  User5,
+} from "../assets";
 
 const avatars = [User1, User2, User3, User4, User5];
 const taskAssets = {

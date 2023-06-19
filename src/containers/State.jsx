@@ -1,6 +1,6 @@
-import TaskCard from "../components/TaskCard";
-import AddSquare from "../assets/add-square.svg";
 import { Droppable } from "react-beautiful-dnd";
+import { AddSquare } from "../assets";
+import TaskCard from "../components/TaskCard";
 
 export default function State({ name, accentColor, tasks, id }) {
   return (

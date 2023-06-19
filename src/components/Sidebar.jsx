@@ -1,11 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
+import { CloseButton, Logo } from "../assets";
 import { navigationMenu } from "../utils/data";
 import Projects from "./Projects";
-
-import CloseButton from "../assets/chevron-left.svg";
-import Logo from "../assets/logo.svg";
 
 export default function Sidebar() {
   const [toggleSidebar, setToggleSidebar] = useState(true);

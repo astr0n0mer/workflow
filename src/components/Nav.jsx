@@ -1,9 +1,11 @@
-import Calendar from "../assets/calendar.svg";
-import MessageQuestion from "../assets/message-question.svg";
-import Notification from "../assets/notification.svg";
-import DownArrow from "../assets/down-arrow.svg";
-import LoggedInUser from "../assets/users/logged-in-user.png";
-import Search from "../assets/search.svg";
+import {
+  Calendar,
+  DownArrow,
+  LoggedInUser,
+  MessageQuestion,
+  Notification,
+  Search,
+} from "../assets";
 
 export default function Nav() {
   return (

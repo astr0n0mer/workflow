@@ -1,8 +1,7 @@
 import { useState } from "react";
-import State from "./State";
 import { DragDropContext } from "react-beautiful-dnd";
-
 import { boards } from "../utils/data";
+import State from "./State";
 
 export default function Board() {
   const [todoTasks, setTodoTasks] = useState(() => boards[0].states[0].tasks);

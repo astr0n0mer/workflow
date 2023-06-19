@@ -1,11 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
+import { Add, Bulb, Ellipses } from "../assets";
 import { boards } from "../utils/data";
-
-import Add from "../assets/add.svg";
-import Bulb from "../assets/bulb-yellow.svg";
-import Ellipses from "../assets/ellipses.svg";
 
 export default function Projects() {
   const [selectedProjectIndex, setSelectedProjectIndex] = useState(0);
@@ -49,9 +45,11 @@ export default function Projects() {
           We don’t have any notice for you, till then you can share your
           thoughts with your peers.
         </p>
-        <button className="rounded bg-white p-2 font-medium text-primary">
-          Write a message
-        </button>
+        <input
+          type="text"
+          className="rounded bg-white p-2 font-medium text-primary placeholder:text-center placeholder:text-primary"
+          placeholder="Write a message"
+        />
       </div>
     </div>
   );
