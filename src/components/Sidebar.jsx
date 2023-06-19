@@ -15,14 +15,17 @@ export default function Sidebar() {
   }
 
   return (
-    <div className="no-scroll sticky top-0 hidden h-screen min-w-max overflow-auto border-r border-border sm:block">
+    <div className="no-scroll sticky top-0 h-screen min-w-max overflow-auto border-r border-border">
       <div className="flex items-center justify-between gap-2 border-b border-border p-6">
-        <img src={Logo} alt="Workflow" />
-        <p className="mr-4 flex-1 text-xl font-semibold">Project M.</p>
+        <img src={Logo} alt="Workflow" className="hidden md:block" />
+        <p className="mr-4 hidden flex-1 text-xl font-semibold md:block">
+          Project M.
+        </p>
         <button>
           <img
             src={CloseButton}
             alt="Close sidebar"
+            className="rotate-180 md:rotate-0"
             onClick={handleToggleSidebar}
           />
         </button>
@@ -36,7 +39,7 @@ export default function Sidebar() {
             className="flex items-center gap-3 rounded-md p-2 leading-5 hover:bg-border"
           >
             <img src={navItem.icon} alt="home" />
-            <span className="capitalize">{navItem.name}</span>
+            <span className="hidden capitalize md:inline">{navItem.name}</span>
           </Link>
         ))}
       </div>

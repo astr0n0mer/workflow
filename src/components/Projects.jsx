@@ -11,7 +11,7 @@ export default function Projects() {
   const [selectedProjectIndex, setSelectedProjectIndex] = useState(0);
 
   return (
-    <div className="mx-3 py-6">
+    <div className="mx-3 hidden py-6 md:block">
       <div className="flex items-center justify-between px-3 text-xs font-bold text-secondary">
         <h2 className="uppercase">My Projects</h2>
         <button>
