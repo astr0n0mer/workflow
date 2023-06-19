@@ -3,15 +3,19 @@ import MessageQuestion from "../assets/message-question.svg";
 import Notification from "../assets/notification.svg";
 import DownArrow from "../assets/down-arrow.svg";
 import LoggedInUser from "../assets/users/logged-in-user.png";
+import Search from "../assets/search.svg";
 
 export default function Nav() {
   return (
     <div className="flex flex-1 flex-wrap items-center gap-4 border-b border-border px-10 py-4 lg:gap-8">
-      <input
-        type="text"
-        placeholder="Search for anything..."
-        className="w-96 flex-grow rounded-md bg-stateBackground bg-[url('./src/assets/search.svg')] bg-[center_left_1em] bg-no-repeat p-2 pl-14 placeholder:text-secondary"
-      />
+      <label className="flex w-96 flex-grow rounded-md bg-stateBackground">
+        <img src={Search} alt="" className="p-2" />
+        <input
+          type="text"
+          placeholder="Search for anything..."
+          className="w-full bg-inherit p-2 placeholder:text-secondary"
+        />
+      </label>
 
       <div className="flex flex-grow gap-2 lg:justify-end">
         <div className="flex items-center gap-4">
@@ -31,7 +35,7 @@ export default function Nav() {
       <div className="flex flex-grow items-center justify-end gap-6 xl:flex-grow-0">
         <div className="flex flex-col justify-between">
           <h6 className="text-primary">Anima Agrawal</h6>
-          <p className="text-sm text-secondary">U.P, India</p>
+          <p className="text-right text-sm text-secondary">U.P, India</p>
         </div>
         <div className="flex gap-2">
           <img src={LoggedInUser} alt="user" className="rounded-full" />

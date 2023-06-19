@@ -4,5 +4,9 @@
   display: none;
 }
 
+.radial-gradient {
+  background-image: radial-gradient(circle, #fcd64ab3, transparent 60%);
+}
+
 @tailwind components;
 @tailwind utilities;

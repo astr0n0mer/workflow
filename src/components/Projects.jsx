@@ -39,8 +39,8 @@ export default function Projects() {
         ))}
       </div>
 
-      <div className="relative mx-3 flex max-w-[13rem] flex-col gap-3 rounded-2xl bg-stateBackground p-3 pt-10 text-center">
-        <div className="absolute left-1/2 top-0 flex aspect-square w-8 -translate-x-1/2 -translate-y-1/2 items-center justify-center bg-[#fcd64ab3] blur-lg">
+      <div className="relative mx-3 mt-10 flex max-w-[13rem] flex-col gap-3 rounded-2xl bg-stateBackground p-3 pt-10 text-center">
+        <div className="radial-gradient absolute left-1/2 top-0 flex aspect-square w-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-stateBackground">
           <img src={Bulb} alt="" />
         </div>
 
